@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160d27">
+  <meta name="description" content="GT6.SHOP — independent digital product listing. Secure checkout options and manual email delivery after payment confirmation.">
+  <title>GT6.SHOP | Digital Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#f34d9b;--purple:#7435a9;--orange:#ff8748;--cyan:#32bfd0;--ink:#160d27;--panel:#211532;--muted:#c9bdd4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#fff;font-family:Inter,system-ui,sans-serif}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 10%,#7435a955,transparent 38%),radial-gradient(ellipse at 90% 35%,#f34d9b30,transparent 34%),linear-gradient(145deg,#160d27,#100d20 70%)}
+    .wrap{width:min(1120px,92%);margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:900 30px 'Barlow Condensed',sans-serif;letter-spacing:1px}.brand span{color:var(--pink)}.nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.12em}
+    .hero{position:relative;overflow:hidden;border:1px solid #ffffff20;border-radius:26px;min-height:520px;background:#211532;box-shadow:0 25px 90px #0008}.hero img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:center 43%;opacity:.74}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#160d27ee 0%,#160d27a8 48%,#160d2730 100%),linear-gradient(0deg,#160d27 0%,transparent 55%)}.hero-content{position:relative;z-index:1;padding:70px 7%;max-width:680px}.eyebrow{display:inline-block;padding:8px 13px;border:1px solid #f34d9b99;border-radius:99px;color:#ffd4e8;background:#f34d9b20;font-size:11px;font-weight:800;letter-spacing:.2em}.hero h1{font:900 clamp(58px,10vw,112px)/.82 'Barlow Condensed',sans-serif;letter-spacing:-.025em;margin:26px 0 18px;text-transform:uppercase;text-shadow:0 5px 35px #f34d9b55}.hero h1 span{display:block;color:var(--pink)}.hero p{color:#eee0f4;line-height:1.7;max-width:450px}.price{font:900 58px 'Barlow Condensed',sans-serif;color:#fff;margin:20px 0}.price small{font:700 15px Inter,sans-serif;color:var(--muted)}.cta{display:inline-flex;align-items:center;justify-content:center;padding:16px 25px;border-radius:10px;background:linear-gradient(100deg,var(--pink),var(--orange));color:#180d27;text-decoration:none;font-weight:900;letter-spacing:.08em;box-shadow:0 10px 35px #f34d9b55;transition:.2s}.cta:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    section{padding:55px 0}.section-title{text-align:center;font:800 42px 'Barlow Condensed',sans-serif;letter-spacing:.04em;margin:0 0 10px}.section-sub{text-align:center;color:var(--muted);font-size:14px;margin:0 auto 28px;max-width:600px;line-height:1.6}.payments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:760px;margin:auto}.pay-card{background:linear-gradient(145deg,#2a1b3b,#1c142b);border:1px solid #ffffff20;border-radius:18px;padding:25px}.pay-card h3{font:800 30px 'Barlow Condensed',sans-serif;margin:0 0 8px}.pay-card p{color:var(--muted);font-size:13px;line-height:1.6;min-height:42px}.pay-btn{width:100%;border:0;border-radius:9px;padding:14px;font-weight:800;cursor:pointer;font-size:14px}.paypal{background:#ffc439;color:#142c55}.usdt{background:#26a17b;color:white}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{background:#ffffff0b;border:1px solid #ffffff17;padding:20px;border-radius:14px}.step b{color:var(--cyan);font:800 25px 'Barlow Condensed',sans-serif}.step p{color:var(--muted);font-size:13px;line-height:1.6}.notice{margin:28px auto 0;max-width:760px;color:#d7ccdf;font-size:11px;line-height:1.65;text-align:center}.footer{border-top:1px solid #ffffff1a;padding:25px 0 35px;text-align:center;color:#a99bb5;font-size:11px;line-height:1.7}
+    .modal{display:none;position:fixed;inset:0;background:#080510d9;z-index:10;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.dialog{width:min(480px,100%);background:#211532;border:1px solid #f34d9b66;border-radius:18px;padding:25px;box-shadow:0 20px 80px #000b}.dialog h2{font:800 32px 'Barlow Condensed',sans-serif;margin:0 0 8px}.dialog p{color:var(--muted);font-size:13px;line-height:1.6}.network{display:inline-block;color:#b8ffe5;background:#26a17b25;border:1px solid #26a17b77;border-radius:7px;padding:7px 10px;font-size:11px;font-weight:800;letter-spacing:.08em}.address{overflow-wrap:anywhere;background:#120d1c;border:1px solid #ffffff20;padding:14px;border-radius:9px;font:12px ui-monospace,monospace;line-height:1.6;margin:15px 0}.copy{width:100%;padding:13px;border:0;border-radius:9px;background:var(--cyan);color:#10232b;font-weight:900;cursor:pointer}.close{float:right;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}.fine{font-size:11px!important;color:#b5a9c0!important}
+    @media(max-width:650px){.nav{height:64px}.hero{min-height:580px}.hero img{object-position:58% center}.hero:after{background:linear-gradient(0deg,#160d27 0%,#160d27b8 52%,#160d2755 100%)}.hero-content{padding:48px 7%}.payments,.steps{grid-template-columns:1fr}.section-title{font-size:36px}.price{font-size:52px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav"><div class="brand">GT6<span>.</span>SHOP</div><a href="#payments">PAYMENT OPTIONS</a></header>
+  <main>
+    <div class="wrap">
+      <section class="hero" aria-label="Digital product promotion">
+        <img src="hero-gta6.png" alt="Neon Vice City inspired promotional artwork">
+        <div class="hero-content">
+          <span class="eyebrow">VICE CITY • DIGITAL OFFER</span>
+          <h1>YOUR NEXT<br><span>ADVENTURE</span></h1>
+          <p>Explore our digital offer. Choose your preferred payment method and receive delivery details by email after your payment has been manually verified.</p>
+          <div class="price">$25 <small>USD</small></div>
+          <a class="cta" href="#payments">VIEW PAYMENT OPTIONS</a>
+        </div>
+      </section>
+    </div>
+    <section id="payments" class="wrap">
+      <h2 class="section-title">CHOOSE YOUR PAYMENT</h2>
+      <p class="section-sub">Two payment options are available. Please keep your payment confirmation so it can be matched to your order.</p>
+      <div class="payments">
+        <article class="pay-card"><h3 style="color:#8ab8ff">PayPal</h3><p>Pay using the secure PayPal checkout page.</p><button class="pay-btn paypal" onclick="location.href='https://www.paypal.com/ncp/payment/TLDQUD6TRCQTC'">PAY WITH PAYPAL</button></article>
+        <article class="pay-card"><h3 style="color:#55d6ae">USDT</h3><p>Send USDT using the BNB Smart Chain network (BEP20).</p><button class="pay-btn usdt" id="openUsdt">VIEW USDT WALLET</button></article>
+      </div>
+      <p class="notice">Important: USDT transfers are irreversible. Confirm the network and wallet address carefully before sending. Do not send USDT through another network.</p>
+    </section>
+    <section class="wrap">
+      <h2 class="section-title">HOW DIGITAL DELIVERY WORKS</h2>
+      <p class="section-sub">Delivery is handled manually by email after payment verification.</p>
+      <div class="steps"><div class="step"><b>01 / PAY</b><p>Choose PayPal or USDT and complete your payment.</p></div><div class="step"><b>02 / CONFIRM</b><p>Send your payment receipt and the email address where you want to receive your order to the seller.</p></div><div class="step"><b>03 / RECEIVE</b><p>After the payment is verified, the seller will email your digital delivery details.</p></div></div>
+      <p class="notice">Independent seller notice: GT6.SHOP is not affiliated with, endorsed by, or sponsored by Rockstar Games or Take-Two Interactive. Product availability, compatibility and delivery terms should be confirmed with the seller before purchase. Do not describe this offer as official early access unless you are authorized to do so.</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap">© 2026 GT6.SHOP · Independent digital storefront<br>Pay only to the wallet and checkout shown on this page.</div></footer>
+  <div class="modal" id="usdtModal" role="dialog" aria-modal="true" aria-labelledby="walletTitle"><div class="dialog"><button class="close" id="closeModal" aria-label="Close">×</button><h2 id="walletTitle">PAY WITH USDT</h2><p>Send exactly <strong>$25 USD equivalent in USDT</strong> using this network:</p><span class="network">BNB SMART CHAIN · BEP20</span><div class="address" id="walletAddress">0xD52d0E9a08D7A7BAfCc18Feabd87DDAB503A507c</div><button class="copy" id="copyAddress">COPY WALLET ADDRESS</button><p class="fine">Check the address and network before confirming. After sending, email your transaction hash and payment receipt to the seller for manual verification. Delivery is not automatic.</p></div></div>
+  <script>
+    const modal=document.getElementById('usdtModal');
+    document.getElementById('openUsdt').addEventListener('click',()=>modal.classList.add('open'));
+    document.getElementById('closeModal').addEventListener('click',()=>modal.classList.remove('open'));
+    modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});
+    document.getElementById('copyAddress').addEventListener('click',async()=>{const address=document.getElementById('walletAddress').textContent;try{await navigator.clipboard.writeText(address);document.getElementById('copyAddress').textContent='ADDRESS COPIED!'}catch(e){document.getElementById('copyAddress').textContent='SELECT AND COPY THE ADDRESS'}});
+  </script>
+</body>
+</html>
